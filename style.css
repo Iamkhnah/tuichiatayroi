@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Đảm bảo video ở phía sau nội dung */
+}
+
+.Background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo video lấp đầy toàn bộ phần tử mà không bị méo */
+}
+.avata i img {
+    width: 120px; /* Đặt chiều rộng cố định */
+    height: 120px; /* Đặt chiều cao cố định bằng với chiều rộng để tạo hình vuông */
+    border-radius: 50%; /* Làm tròn các góc để tạo hình tròn */
+    object-fit: cover; /* Đảm bảo nội dung ảnh không bị méo và lấp đầy khung */
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Loại bỏ kiểu mặc định của Webkit */
+    appearance: none;
+    width: 100%;
+    background: transparent; /* Làm nền trong suốt */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px; /* Chiều cao của track */
+    background: #ddd; /* Màu nền của track */
+    border-radius: 10px; /* Bo tròn các góc của track */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Kích thước của thumb */
+    height: 20px;
+    background: #70b8e9; /* Màu của thumb */
+    cursor: pointer;
+    border-radius: 50%; /* Bo tròn thumb */
+    margin-top: -6px; /* Điều chỉnh vị trí thumb theo track */
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #70b8e9;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Điều chỉnh trên Internet Explorer */
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #70b8e9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Play img {
+    width: 40px;
+}
+.Play {
+    display: flex;
+    justify-content: center;
+}
+.Form {
+    position: absolute;
+    background-color: #e7a9da;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid antiquewhite;
+}
+h1{
+    font-family: abc;
+}
+.avata {
+    flex-direction: column;
+}
+.avata i {
+    display: flex;
+    justify-content: center;  
+}
+.avata h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#timeDisplay {
+    color: white;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+@font-face {
+    font-family: abc;
+    src: url(./All/Cheese\ Matcha.otf);
+}
+button {
+    background: transparent;
+    border: none;
+}
+
+@font-face {
+    font-family: abc2;
+    src: url(./All/Makeba.ttf);
+}
+
+p {
+    font-family: abc2;
+    color: white;
+}
